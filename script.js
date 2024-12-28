@@ -4,6 +4,10 @@ const display = document.getElementById('display');
 function appendNumber(number){
     display.value += number;
 }
+// ฟังชั่นสำหรับลบข้อมูล
+function deleteLastChar() {
+    display.value = display.value.slice(0, -1);
+}
 
 // ฟังชั่นสำหรับการส่งค่าเครื่องหมายไปยังหน้าจอแสดงผล
 function appendOperator(operator){
